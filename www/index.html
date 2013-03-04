@@ -26,12 +26,12 @@
      <meta name="viewport" content=
      "user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=400, height=device-height, target-densitydpi=device-dpi" />
      <link rel="stylesheet" href="css/main.css" type="text/css" />
-<!DOCTYPE html><!--[if IE 8]><html class="ie8" lang="en"><![endif]--><!--[if IE 9]><html class="ie9" lang="en"><![endif]--><!--[if (gt IE 9)|!(IE)]><!--><html lang="en"></html><!--<![endif]--><head><meta charset="utf-8"><meta name="viewport"><title>Kenya Elections 2013 - Daily Nation</title><script type="text/javascript">
+     <meta charset="utf-8"><meta name="viewport"><title>Kenya Elections 2013 - Daily Nation</title><script type="text/javascript">
 (function() {
 
   window.Config = {
     base_url: 'file://www/',
-    json_url: 'http://election2013.nation.co.ke/json/',
+    json_url: 'json/',
     image_url: 'file://www//images',
     version: 'Mobile'
   };
@@ -42,9 +42,9 @@
         $LAB
             .script('js/jquery.min.js')
             .script('js/underscore-min.js')
-            .script('js/lib/accounting.min.js')
+            .script('js/accounting.min.js')
             .script('js/backbone-min.js').wait()
-            .script('js/lib/helper.js').wait()
+            .script('js/helper.js').wait()
             .script('js/mini-script.js').wait()
             .script('js/script.js').wait(function(){
                 new App;
