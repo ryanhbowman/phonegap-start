@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.hello-world"
+        id        = "daily.nation"
         version   = "2.2.0">
-    <name>Hello World</name>
+    <name>Elections 2013 Daily Nation</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
-    </description>
+        The results reporting platform for the Daily Nation newspaper in Kenya.    </description>
 
-    <author href="http://phonegap.com" email="support@phonegap.com">
-        PhoneGap Team
+    <author href="http://nation.co.ke" email="ryan@circle.co.ke">
+        Circle Digital
     </author>
 
     <feature name="http://api.phonegap.com/1.0/device" />
