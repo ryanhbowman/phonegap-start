@@ -44,9 +44,9 @@
             .script('//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js')
             .script('file://www/js/lib/accounting.min.js')
             .script('//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.10/backbone-min.js').wait()
-            .script('file://www/js/lib/helper.js').wait()
-            .script('file://www/js/mini-script.js').wait()
-            .script('file://www/js/script.js').wait(function(){
+            .script('js/lib/helper.js').wait()
+            .script('js/mini-script.js').wait()
+            .script('js/script.js').wait(function(){
                 new App;
             });
     }
