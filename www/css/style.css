@@ -1,0 +1,2057 @@
+.hidden{display:none}
+.top3-cand-name{margin-right:5px}
+/*================
+LESS STUFF
+================*/
+/* -------------------------------------------------- 
+  Table of Contents
+-----------------------------------------------------
+:: LESS
+:: Reset & Standards
+:: Links
+:: Lists
+:: Tables
+:: Misc
+*/
+/*BASELINE*/
+/* COLORS */
+/* MIX-INS */
+@font-face {
+font-family: 'ColfaxBlack';
+src: url('../fonts/ColfaxWebBlack.eot');
+src: url('../fonts/ColfaxWebBlack.eot?#iefix') format('embedded-opentype'), url('../fonts/ColfaxWebBlack.woff') format('woff');
+font-weight: 100;
+font-style: normal;
+}
+@font-face {
+font-family: 'ColfaxBold';
+src: url('../fonts/ColfaxWebBold.eot');
+src: url('../fonts/ColfaxWebBold.eot?#iefix') format('embedded-opentype'), url('../fonts/ColfaxWebBold.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'ColfaxRegular';
+src: url('../fonts/ColfaxWebRegular.eot');
+src: url('../fonts/ColfaxWebRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/ColfaxWebRegular.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'kenya_countiesregular';
+src: url('../fonts/Kenya-Counties-webfont.eot');
+src: url('../fonts/Kenya-Counties-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Kenya-Counties-webfont.woff') format('woff'), url('../fonts/Kenya-Counties-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'icomoon';
+src: url('../fonts/icomoon.eot');
+src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.ttf') format('truetype'), url('../fonts/icomoon.svg#icomoon') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+font-family: 'icomoon';
+content: attr(data-icon);
+speak: none;
+font-weight: normal;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+}
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"]:before {
+*/
+.icon-twitter:before,.icon-facebook:before,.icon-clock-ryan:before,.icon-linkedin:before,.icon-cancel:before,.icon-checkmark:before,.icon-sort:before,.icon-caret-left:before,.icon-caret-right:before,.icon-caret-up:before,.icon-user:before,.icon-group:before,.icon-flag:before,.icon-comments:before,.icon-arrow:before,.icon-earth:before,.icon-kenyamap:before,.icon-shield:before,.icon-home:before,.icon-home-2:before,.icon-caret-down:before,.icon-list:before,.icon-nation-words:before,.icon-nation-words-2:before,.icon-box:before {
+font-family: 'icomoon';
+speak: none;
+font-style: normal;
+font-weight: normal;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+}
+.icon-twitter:before {
+content: "\e007";
+}
+.icon-facebook:before {
+content: "\e006";
+}
+.icon-clock-ryan:before {
+content: "\e005";
+}
+.icon-linkedin:before {
+content: "\e009";
+}
+.icon-cancel:before {
+content: "\e00b";
+}
+.icon-checkmark:before {
+content: "\e00c";
+}
+.icon-sort:before {
+content: "\f0dc";
+}
+.icon-caret-left:before {
+content: "\f0d9";
+}
+.icon-caret-right:before {
+content: "\f0da";
+}
+.icon-caret-up:before {
+content: "\f0d8";
+}
+.icon-user:before {
+content: "\e018";
+}
+.icon-group:before {
+content: "\f0c0";
+}
+.icon-flag:before {
+content: "\e002";
+}
+.icon-comments:before {
+content: "\e000";
+}
+.icon-arrow:before {
+content: "\e001";
+}
+.icon-earth:before {
+content: "\e003";
+}
+.icon-kenyamap:before {
+content: "\e004";
+}
+.icon-shield:before {
+content: "\e008";
+}
+.icon-home:before {
+content: "\f015";
+}
+.icon-home-2:before {
+content: "\e012";
+}
+.icon-caret-down:before {
+content: "\f0d7";
+}
+.icon-list:before {
+content: "\e00a";
+}
+.icon-nation-words:before {
+content: "\e00d";
+}
+.icon-nation-words-2:before {
+content: "\e00e";
+}
+.icon-box:before {
+content: "\e00f";
+}
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+ HTML5 display definitions
+ ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary {
+display: block;
+}
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+audio,canvas,video {
+display: inline-block;
+}
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+display: none;
+height: 0;
+}
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+[hidden] {
+display: none;
+}
+/* ==========================================================================
+ Base
+ ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+font-family: sans-serif;
+/* 1 */
+
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+/* 2 */
+
+}
+/*
+ * Removes default margin.
+ */
+body {
+margin: 0;
+}
+/* ==========================================================================
+ Links
+ ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+outline: thin dotted;
+}
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+a:active,a:hover {
+outline: 0;
+}
+/* ==========================================================================
+ Typography
+ ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+h1 {
+font-size: 2em;
+}
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+border-bottom: 1px dotted;
+}
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,strong {
+font-weight: bold;
+}
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+dfn {
+font-style: italic;
+}
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+mark {
+background: #ff0;
+color: #000;
+}
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+code,kbd,pre,samp {
+font-family: monospace, serif;
+font-size: 1em;
+}
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+pre {
+white-space: pre;
+white-space: pre-wrap;
+word-wrap: break-word;
+}
+/*
+ * Sets consistent quote types.
+ */
+q {
+quotes: "\201C" "\201D" "\2018" "\2019";
+}
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+small {
+font-size: 80%;
+}
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,sup {
+font-size: 75%;
+line-height: 0;
+position: relative;
+vertical-align: baseline;
+}
+sup {
+top: -0.5em;
+}
+sub {
+bottom: -0.25em;
+}
+/* ==========================================================================
+ Embedded content
+ ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+img {
+border: 0;
+}
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+overflow: hidden;
+}
+/* ==========================================================================
+ Figures
+ ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+margin: 0;
+}
+/* ==========================================================================
+ Forms
+ ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+border: 1px solid #c0c0c0;
+margin: 0 2px;
+padding: 0.35em 0.625em 0.75em;
+}
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+border: 0;
+/* 1 */
+
+padding: 0;
+/* 2 */
+
+}
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+button,input,select,textarea {
+font-family: inherit;
+/* 1 */
+
+font-size: 100%;
+/* 2 */
+
+margin: 0;
+/* 3 */
+
+}
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,input {
+line-height: normal;
+}
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,html input[type="button"],input[type="reset"],input[type="submit"] {
+-webkit-appearance: button;
+/* 2 */
+
+cursor: pointer;
+/* 3 */
+
+}
+/*
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],input[disabled] {
+cursor: default;
+}
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+input[type="checkbox"],input[type="radio"] {
+box-sizing: border-box;
+/* 1 */
+
+padding: 0;
+/* 2 */
+
+}
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+-webkit-appearance: textfield;
+/* 1 */
+
+-moz-box-sizing: content-box;
+-webkit-box-sizing: content-box;
+/* 2 */
+
+box-sizing: content-box;
+}
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {
+-webkit-appearance: none;
+}
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,input::-moz-focus-inner {
+border: 0;
+padding: 0;
+}
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+textarea {
+overflow: auto;
+/* 1 */
+
+vertical-align: top;
+/* 2 */
+
+}
+/* ==========================================================================
+ Tables
+ ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+ Base styles: opinionated defaults
+ ========================================================================== */
+html,button,input,select,textarea {
+color: #222;
+}
+body {
+background: #edede1;
+color: #333333;
+font-family: 'ColfaxRegular', 'AvantGardeGothicITCW01B 731069', 'Nimbus Sans TW01', Helvetica, sans-serif;
+font-weight: normal;
+-webkit-font-smoothing: antialiased;
+font-size: 14px;
+}
+a {
+color: #00e;
+}
+a:visited {
+color: #551a8b;
+}
+a:hover {
+color: #06e;
+}
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+img {
+vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+border: 0;
+margin: 0;
+padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+resize: vertical;
+}
+a,a:link,a:visited {
+color: inherit;
+text-decoration: none;
+}
+a:hover,a:focus {
+/*	color: @light-gray;*/
+
+}
+/* ==========================================================================
+ Author's custom styles
+ ========================================================================== */
+/*=====================================================
+ 	
+	 	LAYOUT
+ 	 	
+======================================================*/
+footer {
+padding: 12px;
+background: #1495d6;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+margin-top: 28.5px;
+color: white;
+font-family: 'ColfaxRegular', 'AvantGardeGothicITCW01B 731069', 'Nimbus Sans TW01', Helvetica, sans-serif;
+font-weight: normal;
+}
+.section {
+margin-top: 15px;
+}
+.section img {
+width: 100%;
+}
+.section:first-of-type {
+margin-top: 0;
+}
+header.fixed {
+position: fixed;
+width: 100%;
+z-index: 2;
+top: 0;
+background: black;
+}
+.content-holder {
+margin: 46px auto 0;
+}
+.main-page {
+padding: 15px;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+.limit {
+max-width: 674px;
+margin: 0 auto;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+.left {
+float: left;
+margin-right: 10px;
+}
+.right {
+float: right;
+}
+.red {
+color: #d52229;
+}
+.orange {
+color: #f7931e;
+}
+.green {
+color: #009245;
+}
+.center {
+text-align: center;
+}
+.margin-top {
+margin-top: 12px;
+}
+.required {
+color: #d52229;
+}
+/* * GRID * */
+.row {
+width: 100%;
+/*	 max-width: 600px;*/
+
+margin: 0 auto;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+/* Nicolas Gallagher's micro clearfix */
+.row:before,.row:after,.clearfix:before,.clearfix:after,.module-container:before,.module-container:after {
+content: "";
+display: table;
+}
+.row:after,.module-container:after,.clearfix:after {
+clear: both;
+}
+.row,.clearfix,.module-container {
+zoom: 1;
+}
+.column,.column {
+margin-left: 4.68751%;
+float: left;
+min-height: 1px;
+position: relative;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.column:first-child {
+margin-left: 0px;
+}
+/* COLUMN WIDTHS */
+.one-third {
+width: 33.77083%;
+}
+.two-thirds {
+width: 61.54166%;
+}
+.one-half {
+width: 47.656245%;
+}
+.one-half.no-margin {
+width: 50%;
+}
+.no-margin.column {
+margin-left: 0;
+}
+.column img {
+width: 100%;
+}
+input::-webkit-input-placeholder {
+color: #cccccc;
+text-transform: none;
+font-family: 'ColfaxRegular', 'AvantGardeGothicITCW01B 731069', 'Nimbus Sans TW01', Helvetica, sans-serif;
+font-weight: normal;
+}
+input:-moz-placeholder {
+color: #cccccc;
+text-transform: none;
+font-family: 'ColfaxRegular', 'AvantGardeGothicITCW01B 731069', 'Nimbus Sans TW01', Helvetica, sans-serif;
+font-weight: normal;
+}
+input:-ms-input-placeholder {
+color: #cccccc;
+text-transform: none;
+font-family: 'ColfaxRegular', 'AvantGardeGothicITCW01B 731069', 'Nimbus Sans TW01', Helvetica, sans-serif;
+font-weight: normal;
+}
+input[type="text"],input[type="password"],input[type="email"],textarea {
+background: #f3f4f4;
+padding: 10px 13px;
+font-size: 16px;
+color: #808080;
+width: 100%;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-shadow: none;
+border: 1px #cccccc solid;
+margin: 0 0 9.5px;
+-webkit-border-radius: 3px 3px 0 0;
+-moz-border-radius: 3px 3px 0 0;
+border-radius: 3px 3px 0 0;
+font-family: 'ColfaxRegular', 'AvantGardeGothicITCW01B 731069', 'Nimbus Sans TW01', Helvetica, sans-serif;
+font-weight: normal;
+}
+input[type="text"]:focus,input[type="password"]:focus,input[type="email"]:focus,textarea:focus {
+background: #ffffff;
+}
+select {
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+width: 100%;
+display: block;
+margin: 0;
+}
+input[type="submit"] {
+background: #d52229;
+width: 100%;
+display: block;
+padding: 13px 15px 11px;
+font-size: 18px;
+color: white;
+font-family: 'ColfaxRegular', 'AvantGardeGothicITCW01B 731069', 'Nimbus Sans TW01', Helvetica, sans-serif;
+font-weight: normal;
+margin: 0 0 0;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+cursor: pointer;
+background: #df6d55;
+/* Old browsers */
+
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RmNmQ1NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwJSIgc3RvcC1jb2xvcj0iI2Q1MjIyOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5ZTEzMTciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, #df6d55 0%, #d52229 10%, #9e1317 100%);
+/* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #df6d55), color-stop(10%, #d52229), color-stop(100%, #9e1317));
+/* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top, #df6d55 0%, #d52229 10%, #9e1317 100%);
+/* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top, #df6d55 0%, #d52229 10%, #9e1317 100%);
+/* Opera 11.10+ */
+
+background: -ms-linear-gradient(top, #df6d55 0%, #d52229 10%, #9e1317 100%);
+/* IE10+ */
+
+background: linear-gradient(to bottom, #df6d55 0%, #d52229 10%, #9e1317 100%);
+/* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#df6d55', endColorstr='#9e1317', GradientType=0);
+/* IE6-8 */
+
+border: 1px solid #890b10;
+text-shadow: 0 2px 0px #890b10;
+}
+input[type="radio"] {
+float: left;
+margin: 3px 10px 0px 3px;
+}
+input.error {
+margin-bottom: 0;
+border: 1px solid #d52229;
+}
+label {
+font-family: 'ColfaxBold', 'AvantGardeGothicITCW01B 731063', 'Nimbus Sans TW01 Bold', Helvetica, sans-serif;
+font-weight: normal;
+display: block;
+}
+label.error {
+background: #d52229;
+font-family: 'ColfaxRegular', 'AvantGardeGothicITCW01B 731069', 'Nimbus Sans TW01', Helvetica, sans-serif;
+font-weight: normal;
+-webkit-border-radius: 0 0 3px 3px;
+-moz-border-radius: 0 0 3px 3px;
+border-radius: 0 0 3px 3px;
+color: white;
+padding: 1px 4px;
+margin: 0 0 9.5px;
+display: block;
+}
+fieldset {
+margin: 5px 0;
+}
+ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+ul li {
+margin: 0 0 12px;
+}
+ul li:last-of-type {
+margin: 0;
+}
+nav {
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+display: none;
+}
+nav li {
+width: 100%;
+background: #004d6a;
+color: white;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+text-align: left;
+border-right: 1px solid #003a51;
+font-size: 16px;
+font-family: 'ColfaxRegular', 'AvantGardeGothicITCW01B 731069', 'Nimbus Sans TW01', Helvetica, sans-serif;
+font-weight: normal;
+text-transform: capitalize;
+margin: 0;
+border-top: 1px solid rgba(256, 256, 256, 0.15);
+border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+nav li:last-of-type {
+box-shadow: 0 3px 1px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.2);
+-webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.2);
+border-bottom: none;
+}
+nav li.active {
+background: #002c3c;
+color: white;
+}
+nav li:last-of-type {
+border-right: none;
+}
+nav a.nav-container {
+padding: 13px 17px;
+display: block;
+text-align: ;
+}
+nav a.nav-container:hover,nav a.nav-container:focus {
+background: #003a51;
+color: white;
+}
+nav span {
+margin-top: -5px;
+display: block;
+font-size: 22px;
+float: left;
+width: 35px;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.35), 0 1px 0 rgba(256, 256, 256, 0.35);
+}
+.menu {
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+color: #094461;
+}
+.menu a {
+padding: 0px 0px 0px;
+font-size: 28px;
+display: block;
+margin-top: -3px;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.35), 0 1px 0 rgba(256, 256, 256, 0.35);
+float: left;
+margin-left: 5px;
+}
+.menu .icon-caret-down {
+font-size: 14px;
+position: relative;
+top: -7px;
+}
+/* OLD NAV
+nav {
+	//.box-shadow (0, 2px, 6px, @dark-gray);
+	height: 54px;
+	.box-sizing();
+}
+
+nav li {
+	width: 20%;
+	background: @dark-blue;
+	color: white;
+	float: left;
+	.box-sizing();
+	text-align: center;
+	border-right: 1px solid darken(@dark-blue,5%);
+	font-size: 9px;
+	.sans-serif();
+	text-transform: capitalize;
+}
+
+nav li.active {
+	background:  darken(@dark-blue,9%);
+	color: white;
+}
+
+nav li:last-of-type {
+	border-right: none;
+}
+
+nav a.nav-container {
+	padding: 7px 0;
+	display:block;
+	text-align: center;
+}
+
+nav a.nav-container:hover, nav a.nav-container:focus{
+	background: darken(@dark-blue,5%);
+	color: white;
+}
+
+nav span {
+	margin-bottom: 3px;
+	display: block;
+	font-size: 18px;
+}*/
+/***MAP***/
+.map {
+font-family: 'kenya_countiesregular';
+font-size: 300px;
+width: 300px;
+height: 300px;
+line-height: 100%;
+text-align: center;
+letter-spacing: 1px;
+color: #cccccc;
+display: block;
+}
+.map span {
+position: absolute;
+}
+th {
+font-family: 'ColfaxBold', 'AvantGardeGothicITCW01B 731063', 'Nimbus Sans TW01 Bold', Helvetica, sans-serif;
+font-weight: normal;
+text-transform: uppercase;
+font-size: 8px;
+color: #808080;
+}
+tr,td,th {
+text-align: left;
+font-size: 12px;
+}
+td:first-of-type {
+font-family: 'ColfaxBold', 'AvantGardeGothicITCW01B 731063', 'Nimbus Sans TW01 Bold', Helvetica, sans-serif;
+font-weight: normal;
+}
+td:nth-of-type(n+2),th:nth-of-type(n+2) {
+text-align: right;
+padding: 3px 0 1px;
+}
+tr {
+border-bottom: 1px solid #f3f4f4;
+}
+.legend {
+background: white;
+display: block;
+padding: 5px;
+font-size: 10px;
+}
+.legend li {
+float: left;
+margin: 0 10px 0 0;
+padding: 0;
+}
+.legend .seat {
+width: 10px;
+height: 10px;
+margin-right: 2px;
+margin-left: 0;
+}
+.legend .seat.unreported {
+background: #cccccc;
+}
+.reporting {
+width: 60px;
+height: 60px;
+-webkit-border-radius: 40px;
+-moz-border-radius: 40px;
+border-radius: 40px;
+background: #1495d6;
+color: white;
+text-align: center;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+padding: 18px 0 0 0;
+font-size: 12px;
+text-transform: uppercase;
+line-height: 10px;
+position: absolute;
+z-index: 1;
+box-shadow: 0 0 7px #999999;
+-moz-box-shadow: 0 0 7px #999999;
+-webkit-box-shadow: 0 0 7px #999999;
+}
+.reporting span {
+font-size: 8px;
+}
+/*=====================================================
+ 	
+	 	MODULE
+ 	 	
+======================================================*/
+.module {
+width: 100%;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+margin-top: 12px;
+background: #ffffff;
+-webkit-border-radius: 2px 2px 0 0;
+-moz-border-radius: 2px 2px 0 0;
+border-radius: 2px 2px 0 0;
+box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+-moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+position: relative;
+line-height: 19px;
+}
+.module img {
+width: 100%;
+}
+.module.dark {
+background: #004d6a;
+color: white;
+border: 1px solid #002837;
+border-top: 1px solid #00729d;
+}
+.module.dark p {
+color: white;
+}
+.module:first-of-type {
+margin-top: 0;
+}
+.module.top {
+z-index: 1;
+}
+.module.bottom {
+margin-top: 0;
+z-index: 0;
+-webkit-border-radius: 0 0 2px 2px;
+-moz-border-radius: 0 0 2px 2px;
+border-radius: 0 0 2px 2px;
+}
+.module.bottom .header-annotation {
+color: white;
+}
+.module.bottom a {
+width: 100%;
+display: block;
+}
+.module.bottom .module-container {
+padding: 12px;
+}
+.module-container {
+padding: 9.600000000000001px 12px 12px;
+}
+.module-image {
+width: 26.185185%;
+margin: 0 8.7996px 0px 0;
+float: left;
+}
+.module-image img {
+margin-top: 3px;
+}
+.percentage-big {
+font-family: 'ColfaxBold', 'AvantGardeGothicITCW01B 731063', 'Nimbus Sans TW01 Bold', Helvetica, sans-serif;
+font-weight: normal;
+font-size: 28px;
+margin-top: 15px;
+display: block;
+}
+.module-big-photo {
+-webkit-border-radius: 4px 4px 0 0;
+-moz-border-radius: 4px 4px 0 0;
+border-radius: 4px 4px 0 0;
+}
+.module-information {
+margin: 0 0 5px;
+}
+/*.module p {
+ 	margin: 8px 0 0 ;
+ }*/
+.module-light {
+padding: 0 0 6.333333333333333px;
+margin: 0 0 7.6px;
+border-bottom: 1px solid #cccccc;
+}
+.header-annotation {
+float: right;
+display: block;
+font-size: 10px;
+line-height: 12px;
+color: #808080;
+margin-top: -4px;
+}
+.header-annotation strong {
+font-family: 'ColfaxBold', 'AvantGardeGothicITCW01B 731063', 'Nimbus Sans TW01 Bold', Helvetica, sans-serif;
+font-weight: normal;
+}
+.header-annotation span {
+display: block;
+text-align: right;
+}
+.module-container header {
+border-bottom: 1px solid #cccccc;
+margin-bottom: 7px;
+}
+.module-container select {
+float: left;
+max-width: 89%;
+padding: 1px 0;
+}
+@media only screen and (max-width: 400px) {
+.module-container select {
+  max-width: 83.5%;
+}
+}
+.module-container a.list-go {
+background: #1495d6;
+font-size: 14px;
+font-weight: bold;
+line-height: 100%;
+text-transform: uppercase;
+color: white;
+padding: 6px 10px 4px;
+width: auto;
+float: right;
+border-radius: 2px;
+}
+a.share-button {
+color: white;
+font-family: 'ColfaxBold', 'AvantGardeGothicITCW01B 731063', 'Nimbus Sans TW01 Bold', Helvetica, sans-serif;
+font-weight: normal;
+text-transform: uppercase;
+width: 100%;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+display: block;
+padding: 9px 18px 7px;
+font-size: 15px;
+margin-bottom: 13px;
+line-height: 25px;
+text-align: center;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+}
+a.share-button:last-of-type {
+margin-bottom: 0;
+}
+.button {
+padding: 13px 10px;
+display: block;
+text-align: center;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+.dark-blue {
+background: #00729d;
+margin-bottom: 12px;
+}
+.dark-blue:hover,.dark-blue:focus {
+background: #004d6a;
+}
+.red-grad {
+background-repeat: repeat-x;
+background-image: -khtml-gradient(linear, left top, left bottom, from(#d52229), to(#a91b21)) !important;
+/* Konqueror */
+
+background-image: -moz-linear-gradient(#d52229, #a91b21) !important;
+/* FF 3.6+ */
+
+background-image: -ms-linear-gradient(#d52229, #a91b21) !important;
+/* IE10 */
+
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d52229), color-stop(100%, #a91b21)) !important;
+/* Safari 4+, Chrome 2+ */
+
+background-image: -webkit-linear-gradient(#d52229, #a91b21) !important;
+/* Safari 5.1+, Chrome 10+ */
+
+background-image: -o-linear-gradient(#d52229, #a91b21) !important;
+/* Opera 11.10 */
+
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d52229', endColorstr='#a91b21', GradientType=0);
+/* IE6 & IE7 */
+
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#d52229', endColorstr='#a91b21', GradientType=0)";
+/* IE8+ */
+
+background-image: linear-gradient(#d52229, #a91b21);
+/* the standard */
+
+color: #ffffff !important;
+border-top: 1px solid #e2484e;
+box-shadow: 0 2px 5px #71090d;
+-moz-box-shadow: 0 2px 5px #71090d;
+-webkit-box-shadow: 0 2px 5px #71090d;
+text-shadow: 0 2px 1px #890b10;
+text-transform: uppercase;
+}
+.dark-gray {
+background-repeat: repeat-x;
+background-image: -khtml-gradient(linear, left top, left bottom, from(#4d4d4d), to(#333333)) !important;
+/* Konqueror */
+
+background-image: -moz-linear-gradient(#4d4d4d, #333333) !important;
+/* FF 3.6+ */
+
+background-image: -ms-linear-gradient(#4d4d4d, #333333) !important;
+/* IE10 */
+
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4d4d4d), color-stop(100%, #333333)) !important;
+/* Safari 4+, Chrome 2+ */
+
+background-image: -webkit-linear-gradient(#4d4d4d, #333333) !important;
+/* Safari 5.1+, Chrome 10+ */
+
+background-image: -o-linear-gradient(#4d4d4d, #333333) !important;
+/* Opera 11.10 */
+
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d4d4d', endColorstr='#333333', GradientType=0);
+/* IE6 & IE7 */
+
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d4d4d', endColorstr='#333333', GradientType=0)";
+/* IE8+ */
+
+background-image: linear-gradient(#4d4d4d, #333333);
+/* the standard */
+
+color: #ffffff !important;
+border-top: 1px solid #676767;
+box-shadow: 0 2px 5px #404040;
+-moz-box-shadow: 0 2px 5px #404040;
+-webkit-box-shadow: 0 2px 5px #404040;
+text-shadow: 0 2px 1px #333333;
+}
+.light-gray {
+background-repeat: repeat-x;
+background-image: -khtml-gradient(linear, left top, left bottom, from(#cccccc), to(#808080)) !important;
+/* Konqueror */
+
+background-image: -moz-linear-gradient(#cccccc, #808080) !important;
+/* FF 3.6+ */
+
+background-image: -ms-linear-gradient(#cccccc, #808080) !important;
+/* IE10 */
+
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(100%, #808080)) !important;
+/* Safari 4+, Chrome 2+ */
+
+background-image: -webkit-linear-gradient(#cccccc, #808080) !important;
+/* Safari 5.1+, Chrome 10+ */
+
+background-image: -o-linear-gradient(#cccccc, #808080) !important;
+/* Opera 11.10 */
+
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#808080', GradientType=0);
+/* IE6 & IE7 */
+
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#808080', GradientType=0)";
+/* IE8+ */
+
+background-image: linear-gradient(#cccccc, #808080);
+/* the standard */
+
+color: #ffffff !important;
+border-top: 1px solid #e6e6e6;
+box-shadow: 0 2px 5px #bfbfbf;
+-moz-box-shadow: 0 2px 5px #bfbfbf;
+-webkit-box-shadow: 0 2px 5px #bfbfbf;
+text-shadow: 0 2px 1px #808080;
+}
+a.button.light-gray:hover,a.button.dark-gray:hover {
+background-repeat: repeat-x;
+background-image: -khtml-gradient(linear, left top, left bottom, from(#4d4d4d), to(#4d4d4d)) !important;
+/* Konqueror */
+
+background-image: -moz-linear-gradient(#4d4d4d, #4d4d4d) !important;
+/* FF 3.6+ */
+
+background-image: -ms-linear-gradient(#4d4d4d, #4d4d4d) !important;
+/* IE10 */
+
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4d4d4d), color-stop(100%, #4d4d4d)) !important;
+/* Safari 4+, Chrome 2+ */
+
+background-image: -webkit-linear-gradient(#4d4d4d, #4d4d4d) !important;
+/* Safari 5.1+, Chrome 10+ */
+
+background-image: -o-linear-gradient(#4d4d4d, #4d4d4d) !important;
+/* Opera 11.10 */
+
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d4d4d', endColorstr='#4d4d4d', GradientType=0);
+/* IE6 & IE7 */
+
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d4d4d', endColorstr='#4d4d4d', GradientType=0)";
+/* IE8+ */
+
+background-image: linear-gradient(#4d4d4d, #4d4d4d);
+/* the standard */
+
+color: white;
+}
+x a.button.red-grad:hover {
+background-repeat: repeat-x;
+background-image: -khtml-gradient(linear, left top, left bottom, from(#d52229), to(#d52229)) !important;
+/* Konqueror */
+
+background-image: -moz-linear-gradient(#d52229, #d52229) !important;
+/* FF 3.6+ */
+
+background-image: -ms-linear-gradient(#d52229, #d52229) !important;
+/* IE10 */
+
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d52229), color-stop(100%, #d52229)) !important;
+/* Safari 4+, Chrome 2+ */
+
+background-image: -webkit-linear-gradient(#d52229, #d52229) !important;
+/* Safari 5.1+, Chrome 10+ */
+
+background-image: -o-linear-gradient(#d52229, #d52229) !important;
+/* Opera 11.10 */
+
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d52229', endColorstr='#d52229', GradientType=0);
+/* IE6 & IE7 */
+
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#d52229', endColorstr='#d52229', GradientType=0)";
+/* IE8+ */
+
+background-image: linear-gradient(#d52229, #d52229);
+/* the standard */
+
+color: white;
+}
+.article-image {
+margin-top: 12px;
+}
+figcaption {
+background: #4d4d4d;
+padding: 4px 5px 3px;
+color: white;
+font-family: 'ColfaxRegular', 'AvantGardeGothicITCW01B 731069', 'Nimbus Sans TW01', Helvetica, sans-serif;
+font-weight: normal;
+font-size: 14px;
+text-shadow: 0 1px 0 #333333;
+}
+.small-link {
+text-transform: uppercase;
+font-size: 12px;
+color: #4d4d4d !important;
+font-family: 'ColfaxRegular', 'AvantGardeGothicITCW01B 731069', 'Nimbus Sans TW01', Helvetica, sans-serif;
+font-weight: normal;
+}
+.bar {
+float: left;
+width: 100%;
+height: auto;
+}
+.bar-gain {
+display: block;
+width: 100%;
+height: 11px;
+background: #d9d9d9;
+}
+.bar-gain-actual {
+display: block;
+width: 33.51%;
+height: 11px;
+background: #a0a0a0;
+}
+.candidate-summary .bar {
+margin-top: 4px;
+}
+.candidate-summary {
+float: right;
+width: 71.111111%;
+}
+@media only screen and (max-width: 570px) {
+.candidate-summary {
+  width: 70%;
+}
+}
+.candidate,.party {
+margin-top: 9.600000000000001px;
+}
+.seat {
+background: #4d4d4d;
+display: inline-block;
+height: 19px;
+width: 19px;
+-webkit-border-radius: 100px;
+-moz-border-radius: 100px;
+border-radius: 100px;
+margin-right: 5px;
+}
+.half-seat {
+width: 9px;
+border-radius: 9px 0 0 9px;
+-webkit-border-radius: 9px 0 0 9px;
+-moz-border-radius: 9px 0 0 9px;
+-ms-border-radius: 9px 0 0 9px;
+-o-border-radius: 9px 0 0 9px;
+}
+.three-quarter-seat {
+width: 0;
+height: 0;
+border-right: 9px solid #ffffff;
+border-top: 9px solid #4d4d4d;
+border-left: 9px solid #4d4d4d;
+border-bottom: 9px solid #4d4d4d;
+border-radius: 9px;
+-webkit-border-radius: 9px;
+-moz-border-radius: 9px;
+-ms-border-radius: 9px;
+-o-border-radius: 9px;
+transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+}
+.quarter-seat {
+width: 9px;
+height: 9px;
+border-radius: 0 0 0 9px;
+-webkit-border-radius: 0 0 0 9px;
+-moz-border-radius: 0 0 0 9px;
+-ms-border-radius: 0 0 0 9px;
+-o-border-radius: 0 0 0 9px;
+}
+/*=====================================================
+ 	
+	 	STATE
+ 	 	
+======================================================*/
+.nameplate {
+margin-top: 2px;
+}
+.module.newsletter {
+margin-top: 19px;
+background: #ddd;
+color: #888;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+box-shadow: inset 0 0px 10px #aaaaaa;
+-moz-box-shadow: inset 0 0px 10px #aaaaaa;
+-webkit-box-shadow: inset 0 0px 10px #aaaaaa;
+font-family: 'ColfaxRegular', 'AvantGardeGothicITCW01B 731069', 'Nimbus Sans TW01', Helvetica, sans-serif;
+font-weight: normal;
+line-height: 1em;
+}
+.module.newsletter a {
+text-shadow: 0 2px 4px #f3f4f4 !important;
+display: block;
+line-height: 19px;
+margin-top: 1px;
+}
+.module.newsletter img {
+width: 100%;
+}
+.module.newsletter span {
+font-size: 45px;
+line-height: 30px;
+margin-top: 4px;
+display: block;
+text-shadow: 0 2px 4px #f3f4f4;
+}
+.module.newsletter h3 {
+margin: 0;
+padding: 0;
+line-height: 20px;
+}
+.module.subscribe {
+margin-top: 19px;
+background: #ddd;
+color: #888;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+box-shadow: inset 0 0px 10px #aaaaaa;
+-moz-box-shadow: inset 0 0px 10px #aaaaaa;
+-webkit-box-shadow: inset 0 0px 10px #aaaaaa;
+font-family: 'ColfaxRegular', 'AvantGardeGothicITCW01B 731069', 'Nimbus Sans TW01', Helvetica, sans-serif;
+font-weight: normal;
+line-height: 1em;
+}
+.module.subscribe a {
+text-shadow: 0 2px 4px #f3f4f4 !important;
+display: block;
+line-height: 19px;
+margin-top: 1px;
+}
+.module.subscribe img {
+width: 100%;
+}
+.module.subscribe span {
+font-size: 45px;
+line-height: 14px;
+margin-top: 12px;
+display: block;
+text-shadow: 0 2px 4px #f3f4f4;
+}
+.module.subscribe h3 {
+margin: 0;
+padding: 0;
+line-height: 20px;
+}
+.pager-buttons {
+margin: 19px 0 0;
+}
+.pager-buttons a {
+display: block;
+background: #890b10;
+padding: 6px 9px 5px;
+color: #ffffff;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+}
+.pager-buttons a:hover {
+background: #d52229;
+}
+.pager-buttons a:first-of-type {
+float: left;
+}
+.pager-buttons a:first-of-type:before {
+font-size: 11px;
+content: "\f0d9  ";
+font-family: 'icomoon';
+}
+.pager-buttons a:last-of-type {
+float: right;
+}
+.pager-buttons a:last-of-type:after {
+font-size: 11px;
+content: "  \f0da";
+font-family: 'icomoon';
+}
+.locked-view .icon-key {
+background: #d52229;
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 50px;
+color: #ffffff;
+padding: 9px 8px 4px 10px;
+font-size: 16px;
+}
+.locked-view {
+font-family: 'ColfaxBold', 'AvantGardeGothicITCW01B 731063', 'Nimbus Sans TW01 Bold', Helvetica, sans-serif;
+font-weight: normal;
+text-transform: uppercase;
+font-size: 25px;
+text-align: center;
+margin-top: 19px;
+}
+.locked-message {
+background: #f3f4f4;
+padding: 19px;
+}
+span.big {
+display: block;
+margin: 12px 0 9.600000000000001px;
+font-family: 'ColfaxBold', 'AvantGardeGothicITCW01B 731063', 'Nimbus Sans TW01 Bold', Helvetica, sans-serif;
+font-weight: normal;
+}
+/*=====================================================
+ 	
+	 	THEME
+ 	 	
+======================================================*/
+header.main-header {
+background: #1495d6;
+-webkit-border-radius: 3px 3px 0 0;
+-moz-border-radius: 3px 3px 0 0;
+border-radius: 3px 3px 0 0;
+font-family: 'ColfaxBlack', 'AvantGardeGothicITCW01B 731063', 'Nimbus Sans TW01Bla', Helvetica, sans-serif;
+font-weight: normal;
+color: white;
+font-size: 20px;
+width: 100%;
+padding: 10px 6px 6px;
+height: 46px;
+border-bottom: 1px solid #117bb1;
+border-top: 1px solid #49b7ee;
+box-shadow: 0 3px 1px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.2);
+-webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.2);
+background-repeat: repeat-x;
+background-image: -khtml-gradient(linear, left top, left bottom, from(#159bdf), to(#1495d6)) !important;
+/* Konqueror */
+
+background-image: -moz-linear-gradient(#159bdf, #1495d6) !important;
+/* FF 3.6+ */
+
+background-image: -ms-linear-gradient(#159bdf, #1495d6) !important;
+/* IE10 */
+
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #159bdf), color-stop(100%, #1495d6)) !important;
+/* Safari 4+, Chrome 2+ */
+
+background-image: -webkit-linear-gradient(#159bdf, #1495d6) !important;
+/* Safari 5.1+, Chrome 10+ */
+
+background-image: -o-linear-gradient(#159bdf, #1495d6) !important;
+/* Opera 11.10 */
+
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#159bdf', endColorstr='#1495d6', GradientType=0);
+/* IE6 & IE7 */
+
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#159bdf', endColorstr='#1495d6', GradientType=0)";
+/* IE8+ */
+
+background-image: linear-gradient(#159bdf, #1495d6);
+/* the standard */
+
+}
+.nation-powered {
+background: #004d6a;
+color: white;
+border-bottom: 1px solid #fff;
+z-index: 0;
+}
+.nation-powered .icon-nation-words {
+font-size: 22px;
+}
+.nation-powered .nation-words {
+padding-top: 16px;
+text-shadow: 0 1px 1px #003a51;
+}
+h1 {
+font-size: 16px;
+line-height: 19px;
+font-family: 'ColfaxBold', 'AvantGardeGothicITCW01B 731063', 'Nimbus Sans TW01 Bold', Helvetica, sans-serif;
+margin: 0 0 5px;
+letter-spacing: 0;
+clear: right;
+overflow: hidden;
+font-weight: normal;
+text-shadow: 0 1px 0 #ffffff;
+}
+h1 span {
+font-family: 'ColfaxRegular', 'AvantGardeGothicITCW01B 731069', 'Nimbus Sans TW01', Helvetica, sans-serif;
+font-weight: normal;
+font-size: 12px;
+text-transform: uppercase;
+display: block;
+}
+.dark h1 {
+text-shadow: 0 1px 1px #004d6a;
+}
+.header h1 {
+margin: 0;
+}
+.header h1 span {
+float: left;
+font-size: 18px;
+margin-right: 7px;
+}
+.county-header h1 {
+padding: 0;
+margin: 0;
+}
+h2 {
+margin: 0 0 12px 0;
+}
+h3 {
+margin: 0;
+font-size: 14px;
+line-height: 19px;
+font-family: 'ColfaxBold', 'AvantGardeGothicITCW01B 731063', 'Nimbus Sans TW01 Bold', Helvetica, sans-serif;
+font-weight: normal;
+}
+h3 span {
+font-size: 10px;
+text-transform: uppercase;
+color: #808080;
+font-family: 'ColfaxRegular', 'AvantGardeGothicITCW01B 731069', 'Nimbus Sans TW01', Helvetica, sans-serif;
+font-weight: normal;
+}
+h4.no-margin {
+margin-bottom: 0;
+}
+p {
+font-size: 14px;
+line-height: 19px;
+font-family: 'ColfaxRegular', 'AvantGardeGothicITCW01B 731069', 'Nimbus Sans TW01', Helvetica, sans-serif;
+font-weight: normal;
+letter-spacing: 0px;
+color: #4d4d4d;
+margin: 0 0 12px 0;
+font-weight: 100;
+}
+p:last-child {
+margin: 0;
+}
+/* Colour things by theme */
+/* ==================================================== */
+.RBK .percentage-big,.RBK .sidebar-results-cand-stats-perc {
+color: #00ced1;
+}
+.RBK .bar-gain-actual,.RBK .seat,.RBK .map-key-ref,.RBK .pres-bar-gain-actual:nth-child(-n+14) {
+background: #00ced1;
+}
+.AP .percentage-big,.AP .sidebar-results-cand-stats-perc {
+color: #deb887;
+}
+.AP .bar-gain-actual,.AP .seat,.AP .map-key-ref,.AP .pres-bar-gain-actual:nth-child(-n+14) {
+background: #deb887;
+}
+.ARK .percentage-big,.ARK .sidebar-results-cand-stats-perc {
+color: #fa8072;
+}
+.ARK .bar-gain-actual,.ARK .seat,.ARK .map-key-ref,.ARK .pres-bar-gain-actual:nth-child(-n+14) {
+background: #fa8072;
+}
+.APK .percentage-big,.APK .sidebar-results-cand-stats-perc {
+color: #f0e68c;
+}
+.APK .bar-gain-actual,.APK .seat,.APK .map-key-ref,.APK .pres-bar-gain-actual:nth-child(-n+14) {
+background: #f0e68c;
+}
+.CCM .percentage-big,.CCM .sidebar-results-cand-stats-perc {
+color: #dc143c;
+}
+.CCM .bar-gain-actual,.CCM .seat,.CCM .map-key-ref,.CCM .pres-bar-gain-actual:nth-child(-n+14) {
+background: #dc143c;
+}
+.CP .percentage-big,.CP .sidebar-results-cand-stats-perc {
+color: #87ceeb;
+}
+.CP .bar-gain-actual,.CP .seat,.CP .map-key-ref,.CP .pres-bar-gain-actual:nth-child(-n+14) {
+background: #87ceeb;
+}
+.DP .percentage-big,.DP .sidebar-results-cand-stats-perc {
+color: #00ff7f;
+}
+.DP .bar-gain-actual,.DP .seat,.DP .map-key-ref,.DP .pres-bar-gain-actual:nth-child(-n+14) {
+background: #00ff7f;
+}
+.FP .percentage-big,.FP .sidebar-results-cand-stats-perc {
+color: #00fa9a;
+}
+.FP .bar-gain-actual,.FP .seat,.FP .map-key-ref,.FP .pres-bar-gain-actual:nth-child(-n+14) {
+background: #00fa9a;
+}
+.FORD-P .percentage-big,.FORD-P .sidebar-results-cand-stats-perc {
+color: #7b68ee;
+}
+.FORD-P .bar-gain-actual,.FORD-P .seat,.FORD-P .map-key-ref,.FORD-P .pres-bar-gain-actual:nth-child(-n+14) {
+background: #7b68ee;
+}
+.GNU .percentage-big,.GNU .sidebar-results-cand-stats-perc {
+color: #800080;
+}
+.GNU .bar-gain-actual,.GNU .seat,.GNU .map-key-ref,.GNU .pres-bar-gain-actual:nth-child(-n+14) {
+background: #800080;
+}
+.KNC .percentage-big,.KNC .sidebar-results-cand-stats-perc {
+color: #000000;
+}
+.KNC .bar-gain-actual,.KNC .seat,.KNC .map-key-ref,.KNC .pres-bar-gain-actual:nth-child(-n+14) {
+background: #000000;
+}
+.KENDA .percentage-big,.KENDA .sidebar-results-cand-stats-perc {
+color: #ffefd5;
+}
+.KENDA .bar-gain-actual,.KENDA .seat,.KENDA .map-key-ref,.KENDA .pres-bar-gain-actual:nth-child(-n+14) {
+background: #ffefd5;
+}
+.KSC .percentage-big,.KSC .sidebar-results-cand-stats-perc {
+color: #cd853f;
+}
+.KSC .bar-gain-actual,.KSC .seat,.KSC .map-key-ref,.KSC .pres-bar-gain-actual:nth-child(-n+14) {
+background: #cd853f;
+}
+.MDP .percentage-big,.MDP .sidebar-results-cand-stats-perc {
+color: #808080;
+}
+.MDP .bar-gain-actual,.MDP .seat,.MDP .map-key-ref,.MDP .pres-bar-gain-actual:nth-child(-n+14) {
+background: #808080;
+}
+.MGPK .percentage-big,.MGPK .sidebar-results-cand-stats-perc {
+color: #32cd32;
+}
+.MGPK .bar-gain-actual,.MGPK .seat,.MGPK .map-key-ref,.MGPK .pres-bar-gain-actual:nth-child(-n+14) {
+background: #32cd32;
+}
+.MSM .percentage-big,.MSM .sidebar-results-cand-stats-perc {
+color: #b22222;
+}
+.MSM .bar-gain-actual,.MSM .seat,.MSM .map-key-ref,.MSM .pres-bar-gain-actual:nth-child(-n+14) {
+background: #b22222;
+}
+.MSS .percentage-big,.MSS .sidebar-results-cand-stats-perc {
+color: #ffffe0;
+}
+.MSS .bar-gain-actual,.MSS .seat,.MSS .map-key-ref,.MSS .pres-bar-gain-actual:nth-child(-n+14) {
+background: #ffffe0;
+}
+.NARC-K .percentage-big,.NARC-K .sidebar-results-cand-stats-perc {
+color: 8000;
+}
+.NARC-K .bar-gain-actual,.NARC-K .seat,.NARC-K .map-key-ref,.NARC-K .pres-bar-gain-actual:nth-child(-n+14) {
+background: 8000;
+}
+.NAPK .percentage-big,.NAPK .sidebar-results-cand-stats-perc {
+color: #00ffff;
+}
+.NAPK .bar-gain-actual,.NAPK .seat,.NAPK .map-key-ref,.NAPK .pres-bar-gain-actual:nth-child(-n+14) {
+background: #00ffff;
+}
+.NDM .percentage-big,.NDM .sidebar-results-cand-stats-perc {
+color: #00ff00;
+}
+.NDM .bar-gain-actual,.NDM .seat,.NDM .map-key-ref,.NDM .pres-bar-gain-actual:nth-child(-n+14) {
+background: #00ff00;
+}
+.NLP .percentage-big,.NLP .sidebar-results-cand-stats-perc {
+color: #deb887;
+}
+.NLP .bar-gain-actual,.NLP .seat,.NLP .map-key-ref,.NLP .pres-bar-gain-actual:nth-child(-n+14) {
+background: #deb887;
+}
+.NARC .percentage-big,.NARC .sidebar-results-cand-stats-perc {
+color: #4169e1;
+}
+.NARC .bar-gain-actual,.NARC .seat,.NARC .map-key-ref,.NARC .pres-bar-gain-actual:nth-child(-n+14) {
+background: #4169e1;
+}
+.ND .percentage-big,.ND .sidebar-results-cand-stats-perc {
+color: #66cdaa;
+}
+.ND .bar-gain-actual,.ND .seat,.ND .map-key-ref,.ND .pres-bar-gain-actual:nth-child(-n+14) {
+background: #66cdaa;
+}
+.NFK .percentage-big,.NFK .sidebar-results-cand-stats-perc {
+color: #0000ff;
+}
+.NFK .bar-gain-actual,.NFK .seat,.NFK .map-key-ref,.NFK .pres-bar-gain-actual:nth-child(-n+14) {
+background: #0000ff;
+}
+.ODM .percentage-big,.ODM .sidebar-results-cand-stats-perc {
+color: #ffa500;
+}
+.ODM .bar-gain-actual,.ODM .seat,.ODM .map-key-ref,.ODM .pres-bar-gain-actual:nth-child(-n+14) {
+background: #ffa500;
+}
+.PDU .percentage-big,.PDU .sidebar-results-cand-stats-perc {
+color: #f0e68c;
+}
+.PDU .bar-gain-actual,.PDU .seat,.PDU .map-key-ref,.PDU .pres-bar-gain-actual:nth-child(-n+14) {
+background: #f0e68c;
+}
+.PICK .percentage-big,.PICK .sidebar-results-cand-stats-perc {
+color: #ffff00;
+}
+.PICK .bar-gain-actual,.PICK .seat,.PICK .map-key-ref,.PICK .pres-bar-gain-actual:nth-child(-n+14) {
+background: #ffff00;
+}
+.PNU .percentage-big,.PNU .sidebar-results-cand-stats-perc {
+color: #7b68ee;
+}
+.PNU .bar-gain-actual,.PNU .seat,.PNU .map-key-ref,.PNU .pres-bar-gain-actual:nth-child(-n+14) {
+background: #7b68ee;
+}
+.PDP .percentage-big,.PDP .sidebar-results-cand-stats-perc {
+color: #ffa07a;
+}
+.PDP .bar-gain-actual,.PDP .seat,.PDP .map-key-ref,.PDP .pres-bar-gain-actual:nth-child(-n+14) {
+background: #ffa07a;
+}
+.PPK .percentage-big,.PPK .sidebar-results-cand-stats-perc {
+color: #1495d6;
+}
+.PPK .bar-gain-actual,.PPK .seat,.PPK .map-key-ref,.PPK .pres-bar-gain-actual:nth-child(-n+14) {
+background: #1495d6;
+}
+.PROGPK .percentage-big,.PROGPK .sidebar-results-cand-stats-perc {
+color: #0000cd;
+}
+.PROGPK .bar-gain-actual,.PROGPK .seat,.PROGPK .map-key-ref,.PROGPK .pres-bar-gain-actual:nth-child(-n+14) {
+background: #0000cd;
+}
+.RLP .percentage-big,.RLP .sidebar-results-cand-stats-perc {
+color: #000080;
+}
+.RLP .bar-gain-actual,.RLP .seat,.RLP .map-key-ref,.RLP .pres-bar-gain-actual:nth-child(-n+14) {
+background: #000080;
+}
+.RC .percentage-big,.RC .sidebar-results-cand-stats-perc {
+color: #fffacd;
+}
+.RC .bar-gain-actual,.RC .seat,.RC .map-key-ref,.RC .pres-bar-gain-actual:nth-child(-n+14) {
+background: #fffacd;
+}
+.RPK .percentage-big,.RPK .sidebar-results-cand-stats-perc {
+color: #bdb76b;
+}
+.RPK .bar-gain-actual,.RPK .seat,.RPK .map-key-ref,.RPK .pres-bar-gain-actual:nth-child(-n+14) {
+background: #bdb76b;
+}
+.77 .percentage-big,.77 .sidebar-results-cand-stats-perc {
+color: #f5f5dc;
+}
+.77 .bar-gain-actual,.77 .seat,.77 .map-key-ref,.77 .pres-bar-gain-actual:nth-child(-n+14) {
+background: #f5f5dc;
+}
+.SAFINA .percentage-big,.SAFINA .sidebar-results-cand-stats-perc {
+color: #b8860b;
+}
+.SAFINA .bar-gain-actual,.SAFINA .seat,.SAFINA .map-key-ref,.SAFINA .pres-bar-gain-actual:nth-child(-n+14) {
+background: #b8860b;
+}
+.SPK .percentage-big,.SPK .sidebar-results-cand-stats-perc {
+color: #ffe4b5;
+}
+.SPK .bar-gain-actual,.SPK .seat,.SPK .map-key-ref,.SPK .pres-bar-gain-actual:nth-child(-n+14) {
+background: #ffe4b5;
+}
+.SSP .percentage-big,.SSP .sidebar-results-cand-stats-perc {
+color: #f5fffa;
+}
+.SSP .bar-gain-actual,.SSP .seat,.SSP .map-key-ref,.SSP .pres-bar-gain-actual:nth-child(-n+14) {
+background: #f5fffa;
+}
+.SDP .percentage-big,.SDP .sidebar-results-cand-stats-perc {
+color: #ff4500;
+}
+.SDP .bar-gain-actual,.SDP .seat,.SDP .map-key-ref,.SDP .pres-bar-gain-actual:nth-child(-n+14) {
+background: #ff4500;
+}
+.TNA .percentage-big,.TNA .sidebar-results-cand-stats-perc {
+color: #ff0000;
+}
+.TNA .bar-gain-actual,.TNA .seat,.TNA .map-key-ref,.TNA .pres-bar-gain-actual:nth-child(-n+14) {
+background: #ff0000;
+}
+.NVP .percentage-big,.NVP .sidebar-results-cand-stats-perc {
+color: #ffdead;
+}
+.NVP .bar-gain-actual,.NVP .seat,.NVP .map-key-ref,.NVP .pres-bar-gain-actual:nth-child(-n+14) {
+background: #ffdead;
+}
+.UDFP .percentage-big,.UDFP .sidebar-results-cand-stats-perc {
+color: #deb887;
+}
+.UDFP .bar-gain-actual,.UDFP .seat,.UDFP .map-key-ref,.UDFP .pres-bar-gain-actual:nth-child(-n+14) {
+background: #deb887;
+}
+.UDM .percentage-big,.UDM .sidebar-results-cand-stats-perc {
+color: #7b68ee;
+}
+.UDM .bar-gain-actual,.UDM .seat,.UDM .map-key-ref,.UDM .pres-bar-gain-actual:nth-child(-n+14) {
+background: #7b68ee;
+}
+.URP .percentage-big,.URP .sidebar-results-cand-stats-perc {
+color: #ffff00;
+}
+.URP .bar-gain-actual,.URP .seat,.URP .map-key-ref,.URP .pres-bar-gain-actual:nth-child(-n+14) {
+background: #ffff00;
+}
+.WDM-K .percentage-big,.WDM-K .sidebar-results-cand-stats-perc {
+color: #ffffff;
+}
+.WDM-K .bar-gain-actual,.WDM-K .seat,.WDM-K .map-key-ref,.WDM-K .pres-bar-gain-actual:nth-child(-n+14) {
+background: #ffffff;
+}
+.other-party .percentage-big,.other-party .sidebar-results-cand-stats-perc {
+color: #1495d6;
+}
+.other-party .bar-gain-actual,.other-party .seat,.other-party .map-key-ref,.other-party .pres-bar-gain-actual:nth-child(-n+14) {
+background: #1495d6;
+}
+/* ==========================================================================
+ Helper classes
+ ========================================================================== */
+/* Prevent callout */
+.nocallout {
+-webkit-touch-callout: none;
+}
+.pressed {
+background-color: rgba(0, 0, 0, 0.7);
+}
+/* A hack for HTML5 contenteditable attribute on mobile */
+textarea[contenteditable] {
+-webkit-appearance: none;
+}
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+ they have been set as display: none */
+.gifhidden {
+position: absolute;
+left: -100%;
+}
+/*
+ * Image replacement
+ */
+.ir {
+background-color: transparent;
+background-repeat: no-repeat;
+border: 0;
+direction: ltr;
+display: block;
+overflow: hidden;
+text-align: left;
+text-indent: -999em;
+}
+.ir br {
+display: none;
+}
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+display: none !important;
+visibility: hidden;
+}
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+border: 0;
+clip: rect(0 0 0 0);
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+width: 1px;
+}
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus {
+clip: auto;
+height: auto;
+margin: 0;
+overflow: visible;
+position: static;
+width: auto;
+}
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+visibility: hidden;
+}
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+.clearfix:before,.clearfix:after,.pager-buttons:before,.pager-buttons:after,nav:before,nav:after,.candidate:before,.candidate:after {
+content: "";
+display: table;
+}
+.clearfix:after,.pager-buttons:after,nav:after,.candidate:after {
+clear: both;
+}
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix,.pager-buttons,nav,.candidate {
+*zoom: 1;
+}
+/* ==========================================================================
+ EXAMPLE Media Queries for Responsive Design.
+ Theses examples override the primary ('mobile first') styles.
+ Modify as content requires.
+ ========================================================================== */
+@media only screen and (min-width: 570px) {
+h6 {
+  clear: none;
+}
+.module-image {
+  margin-bottom: 0;
+}
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+/* Style adjustments for viewports that meet the condition */
+}
